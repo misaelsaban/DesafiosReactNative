@@ -76,12 +76,12 @@ export default function App() {
           return (
             <View style={styles.item}>
               <View>
-                <Text style={{width: 150}}>{data.item.value}</Text>
+                <Text style={{width: 100}}>{data.item.value}</Text>
               </View>
               {data.item.completa ? (
                 <View style={{flexDirection: 'row'}}>
-                  <Text style={{color:'#378949',padding: 20}}>COMPLETADA!</Text>
-                  <Icon raised name='trash' type='evilicon'color='#FF0000' onPress={()=> handleModalOpen(data.item.id)}/>
+                  <Text style={{color:'#378949',marginTop: 25}}>COMPLETADA!</Text>
+                  <Icon raised name='trash' type='evilicon' color='#FF0000' onPress={()=> handleModalOpen(data.item.id)}/>
                 </View>
               ) : (
                 <View style={{flexDirection: 'row'}}>
